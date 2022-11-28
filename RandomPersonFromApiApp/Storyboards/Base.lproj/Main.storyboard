@@ -85,11 +85,15 @@
                                     <action selector="getPersonButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="gid-tv-gyt"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="sgA-c1-b4D">
+                                <rect key="frame" x="185" y="187" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RCf-OA-qDM" firstAttribute="top" secondItem="Zuy-dN-sof" secondAttribute="bottom" constant="20" id="IAB-s9-IcJ"/>
+                            <constraint firstItem="sgA-c1-b4D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="PJc-GJ-2KW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dSQ-EZ-c7C" secondAttribute="bottom" constant="50" id="TBV-Ay-kyJ"/>
                             <constraint firstItem="dSQ-EZ-c7C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YgL-G9-QgL"/>
                             <constraint firstItem="Zuy-dN-sof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gAS-qK-zom"/>
@@ -97,21 +101,27 @@
                             <constraint firstItem="Zuy-dN-sof" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="lXH-KR-w3G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RCf-OA-qDM" secondAttribute="trailing" constant="16" id="m86-9x-Bbo"/>
                             <constraint firstItem="RCf-OA-qDM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pA2-5U-rob"/>
+                            <constraint firstItem="sgA-c1-b4D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sz4-H2-P1G"/>
                             <constraint firstItem="RCf-OA-qDM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vqt-dI-64Y"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="sgA-c1-b4D" id="4u9-Hq-69h"/>
                         <outlet property="emailLabel" destination="HbS-2P-jCe" id="Jt2-c0-g5h"/>
                         <outlet property="genderLabel" destination="FAN-Rv-9Hb" id="rox-m1-KwW"/>
                         <outlet property="getPersonButton" destination="dSQ-EZ-c7C" id="H7P-Uz-Uno"/>
                         <outlet property="imageView" destination="Zuy-dN-sof" id="ERg-pO-rbQ"/>
                         <outlet property="locationLabel" destination="bbH-lU-VHO" id="TL7-k1-3RV"/>
                         <outlet property="nameLabel" destination="7hK-cd-FiR" id="JR3-7D-HGD"/>
+                        <outletCollection property="personInfoLabels" destination="FAN-Rv-9Hb" collectionClass="NSMutableArray" id="4Vs-mf-bkA"/>
+                        <outletCollection property="personInfoLabels" destination="7hK-cd-FiR" collectionClass="NSMutableArray" id="yZs-N8-AlL"/>
+                        <outletCollection property="personInfoLabels" destination="bbH-lU-VHO" collectionClass="NSMutableArray" id="btB-zN-QYt"/>
+                        <outletCollection property="personInfoLabels" destination="HbS-2P-jCe" collectionClass="NSMutableArray" id="4T0-ZJ-eso"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="-2"/>
+            <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>

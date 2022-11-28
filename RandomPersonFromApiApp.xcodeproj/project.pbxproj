@@ -58,16 +58,64 @@
 		272B43A92934FF04009674D0 /* RandomPersonFromApiApp */ = {
 			isa = PBXGroup;
 			children = (
-				272B43AA2934FF04009674D0 /* AppDelegate.swift */,
-				272B43AC2934FF04009674D0 /* SceneDelegate.swift */,
-				272B43AE2934FF04009674D0 /* ViewController.swift */,
-				272B43B02934FF04009674D0 /* Main.storyboard */,
-				272B43B32934FF04009674D0 /* Assets.xcassets */,
-				272B43B52934FF04009674D0 /* LaunchScreen.storyboard */,
-				272B43B82934FF04009674D0 /* Info.plist */,
-				272B43BE2934FF6F009674D0 /* Person.swift */,
+				272B43C52935527D009674D0 /* DataManagers */,
+				272B43C12935524C009674D0 /* App */,
+				272B43C229355254009674D0 /* ViewControllers */,
+				272B43C32935525F009674D0 /* Storyboards */,
+				272B43C429355267009674D0 /* Resources */,
+				272B43C029355241009674D0 /* Models */,
 			);
 			path = RandomPersonFromApiApp;
+			sourceTree = "<group>";
+		};
+		272B43C029355241009674D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				272B43BE2934FF6F009674D0 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		272B43C12935524C009674D0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				272B43AA2934FF04009674D0 /* AppDelegate.swift */,
+				272B43AC2934FF04009674D0 /* SceneDelegate.swift */,
+				272B43B82934FF04009674D0 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		272B43C229355254009674D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				272B43AE2934FF04009674D0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		272B43C32935525F009674D0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				272B43B02934FF04009674D0 /* Main.storyboard */,
+				272B43B52934FF04009674D0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		272B43C429355267009674D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				272B43B32934FF04009674D0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		272B43C52935527D009674D0 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomPersonFromApiApp/Info.plist;
+				INFOPLIST_FILE = RandomPersonFromApiApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomPersonFromApiApp/Info.plist;
+				INFOPLIST_FILE = RandomPersonFromApiApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
